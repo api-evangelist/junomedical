@@ -1,7 +1,30 @@
 aid: junomedical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/junomedical.png
 name: Junomedical
-description: Junomedical is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Junomedical (now Qunomedical) is a Berlin-based digital health company founded
+  in 2015 by Dr. Sophie Chung that connects patients with professionally-vetted
+  doctors and clinics for high-quality medical treatments at home and abroad.
+  The consumer platform (qunomedical.com) offers free assessments, price matching,
+  24/7 patient support, and personalized treatment matching across specialties
+  including plastic surgery, hair transplants, dentistry, oncology, orthopedics,
+  reproductive medicine, and weight-loss surgery, serving roughly 10,000 patients
+  a month. The company also builds Qunosuite, a patient-relationship-management
+  (PRM) SaaS for healthcare providers. This profile was surfaced as a 500 Global
+  portfolio company and added to the API Evangelist network; the company operates
+  a consumer marketplace and a provider SaaS but publishes no public developer API,
+  OpenAPI specification, or SDKs at this time.
 url: https://raw.githubusercontent.com/api-evangelist/junomedical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Digital Health
+- Medical Travel
+- Telehealth
+- Patient Relationship Management
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/junomedical-domain-security.yml
 - type: Website
   url: https://qunomedical.com
+- type: Blog
+  url: https://www.qunomedical.com/en/blog
+- type: PrivacyPolicy
+  url: https://www.qunomedical.com/en/privacy
+- type: TermsOfService
+  url: https://www.qunomedical.com/en/terms-and-conditions
+- type: Support
+  url: https://www.qunomedical.com/en/contact
+- type: Careers
+  url: https://careers.qunomedical.com/
+- type: GitHubOrganization
+  url: https://github.com/junomedical
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
